@@ -29,10 +29,10 @@ async function bootstrap() {
 
     app.use(bodyParser.urlencoded({ extended: true }));
 
-    app.use("/api", apiRoute);
+    app.use("/", apiRoute);
 
-    app.listen({ port: 4000 }, () =>
-        console.log(`Server started on: http://localhost:${4000}/`)
+    app.listen({ port: 1337 }, () =>
+        console.log(`Server started on: http://localhost:${1337}/`)
     );
 }
 

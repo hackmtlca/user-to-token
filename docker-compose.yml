@@ -1,0 +1,19 @@
+version: '3.7'
+
+services:
+  frontend:
+    container_name: user-to-token-frontend
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - '80:80'
+  backend:
+    container_name: user-to-token-backend
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    environment:
+      - JWT_SECRET="superl33tsecret"
+    ports:
+      - '1337:1337'

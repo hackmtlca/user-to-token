@@ -17,7 +17,8 @@
     },
     "scripts": {
         "start": "nodemon",
-        "prod": "ts-node --project ./tsconfig.json ./src/index.ts"
+        "prod": "ts-node --project ./tsconfig.json ./src/index.ts",
+        "build": "tsc"
     },
     "devDependencies": {
         "nodemon": "^2.0.2",
