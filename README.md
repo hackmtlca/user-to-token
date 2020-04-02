@@ -4,7 +4,7 @@ This problem is part of the `Intro to Hacking Workshop`. View the [Bug Bounty Gu
 
 ## Context
 
-User to Token is a "safe" no password solution to store personal information. All your user information is stored in your one-time `JWT`. Our lead programmer, a security noob, told us that there shouldn't be any `XSS Injection` nor `SQL Injection`. This said, during the past week, our `Sqlite Database` has been acting weirdly. Can you help us figuring out why?
+User to Token is a "safe" no password solution to store personal information. All your user information is stored in your one-time `JWT`. Our lead programmer, a security noob, told us that neither `XSS Injections` no `SQL Injections` should be possible. This said, during the past week, our `Sqlite Database` has been acting weirdly. Can you help us figure out why?
 
 ## Running the App
 
